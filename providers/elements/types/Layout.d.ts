@@ -36,12 +36,10 @@ declare interface LayoutProps {
 
 declare interface GridProps extends LayoutProps {
   wrap?: import('@sbf-types/general').FlexWrap;
-  flex?: string | number;
 }
 
 declare interface GridItemProps extends LayoutProps {
   wrap?: import('@sbf-types/general').FlexWrap;
-  flex?: string | number;
   col?: number;
   offset?: number;
   flexBasis?: string;

@@ -3,7 +3,7 @@ import React from 'react';
 import debounce from 'lodash.debounce'; // 4.0.8
 
 export const withPreventDoubleClick = (WrappedComponent: any) => {
-  class PreventDoubleClick extends React.PureComponent {
+  class PreventDoubleClick extends React.PureComponent<any> {
     static displayName: string;
     debouncedOnPress = () => {
       this.props.onPress && this.props.onPress();
