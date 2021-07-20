@@ -1,10 +1,10 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import {
   Picker as RNPicker,
   PickerProps as PickerRNProps,
 } from '@react-native-picker/picker';
-import {useElement, ElementsType} from '@sbf-providers/elements';
-import {TrackeableHOC} from '../TrackeableHOC';
+import { useElement, ElementsType } from '@sbf-providers/elements';
+import { TrackeableHOC } from '../TrackeableHOC';
 
 const RNPickerTestable = TrackeableHOC<
   PickerRNProps & TrackeablePropsInterface
@@ -21,6 +21,8 @@ const Picker: React.FC<PickerProps> = ({
   return (
     <LayoutItem backgroundColor="white" fullWidth shaped bordered>
       <RNPickerTestable
+        style={{ height: 50 }}
+        itemStyle={{ height: 50 }}
         idTrack={idTrack}
         selectedValue={selectedItem}
         onValueChange={(itemValue: any) => {

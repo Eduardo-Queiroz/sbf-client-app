@@ -1,37 +1,37 @@
 import React from 'react';
-import {useDispatch, useSelector} from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 
-import {IconsType} from '@sbf-providers/icons';
-import {useElement, ElementsType} from '@sbf-providers/elements';
-import {useLocale} from '@sbf-providers/locale';
+import { IconsType } from '@sbf-providers/icons';
+import { useElement, ElementsType } from '@sbf-providers/elements';
+import { useLocale } from '@sbf-providers/locale';
 
-import {Actions} from '../../store/repository';
-import {State} from '../../../types';
+import { Actions } from '../../store/repository';
+import { State } from '../../../types';
 import { useTrack } from '@sbf-providers/track';
-import {InputSearch} from './styles.tsx'
+import { InputSearch } from './styles.tsx'
 
-const {onChangeSearchField, getSearchProducts, cancelSearch} = Actions;
+const { onChangeSearchField, getSearchProducts, cancelSearch } = Actions;
 
 export const Search = () => {
   const dispatch = useDispatch();
   const {
     touchableTrack: {
-      Catalog: {trackCancelSearch},
+      Catalog: { trackCancelSearch },
     },
     inputTrack: {
-      Catalog: {trackSearch},
+      Catalog: { trackSearch },
     },
   } = useTrack();
   const {
     containers: {
-      InputSearch: {placeholder, cancel},
+      InputSearch: { placeholder, cancel },
     },
   } = useLocale();
   const searchText = useSelector<State, string>(
-    ({catalog}) => catalog.searchText,
+    ({ catalog }) => catalog.searchText,
   );
   const hasSearcheableProducts = useSelector<State, boolean>(
-    ({catalog}) => !!catalog.visibleSearchProducts?.length,
+    ({ catalog }) => !!catalog.visibleSearchProducts?.length,
   );
 
   const LayoutItem = useElement<LayoutProps>(ElementsType.LAYOUT_ITEM);
@@ -45,10 +45,10 @@ export const Search = () => {
   return (
     <Grid justifyContent="center" paddingTop="sm" marginBottom="sm">
       <GridItem col={hasSearcheableProducts ? 10 : 12} paddingRight="xs">
-        <Grid>
+        <Grid gutterHorizontal="sm">
           <GridItem shaped fullWidth backgroundColor="white" elevated>
             <Grid marginLeft="sm" marginRight="sm" fullHeight>
-              <GridItem col={11} gutterHorizontal="xs">
+              <GridItem col={11} gutterHorizontal="sm">
                 <InputSearch
                   idTrack={trackSearch}
                   value={searchText}

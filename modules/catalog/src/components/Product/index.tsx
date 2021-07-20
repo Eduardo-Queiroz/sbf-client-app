@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {useElement, ElementsType} from '@sbf-providers/elements';
-import {Dimensions, Image} from 'react-native';
-import {ActionProcolType} from '@sbf-providers/redux';
-import {useDispatch} from 'react-redux';
-import {Product as ProductInterface} from '@sbf-types/general';
-import {useLocale} from '@sbf-providers/locale';
-import {useTrack} from '@sbf-providers/track';
-import {formatCurrency} from '@sbf-core/util';
+import { useElement, ElementsType } from '@sbf-providers/elements';
+import { Dimensions, Image } from 'react-native';
+import { ActionProcolType } from '@sbf-providers/redux';
+import { useDispatch } from 'react-redux';
+import { Product as ProductInterface } from '@sbf-types/general';
+import { useLocale } from '@sbf-providers/locale';
+import { useTrack } from '@sbf-providers/track';
+import { formatCurrency } from '@sbf-core/util';
 
 const PRODUCT_WIDTH = `${Dimensions.get('window').width / 2.1}px`;
 
@@ -27,12 +27,12 @@ const Product: React.FC<ProductInterface> = ({
 
   const {
     touchableTrack: {
-      Catalog: {trackAddProduct},
+      Catalog: { trackAddProduct },
     },
   } = useTrack();
   const {
     components: {
-      product: {freeShipping: freeShippingText, modelsType},
+      product: { freeShipping: freeShippingText, modelsType },
     },
   } = useLocale();
   const Typography = useElement<TypographyProps>(ElementsType.TYPOGRAPHY);
@@ -147,7 +147,7 @@ const Product: React.FC<ProductInterface> = ({
                     <GridItem col={8} paddingRight="xs">
                       <Rating rating={rate} />
                     </GridItem>
-                    <GridItem col={3} paddingLeft="xs">
+                    <GridItem col={4} paddingLeft="xs">
                       <Typography
                         fontWeight="bold"
                         color="darkGrey"

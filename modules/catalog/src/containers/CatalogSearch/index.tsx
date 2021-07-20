@@ -1,41 +1,41 @@
 import React from 'react';
-import {useElement, ElementsType} from '@sbf-providers/elements';
-import {useComponent, ComponentsType} from '@sbf-providers/components';
+import { useElement, ElementsType } from '@sbf-providers/elements';
+import { useComponent, ComponentsType } from '@sbf-providers/components';
 import Product from '../../components/Product';
-import {Actions} from '../../store/repository';
-import {useDispatch, useSelector} from 'react-redux';
-import {State, SORT_OPTIONS} from '../../../types';
-import {Product as ProductInterface} from '@sbf-types/general';
-import {useLocale} from '@sbf-providers/locale';
-import {useTrack} from '@sbf-providers/track';
+import { Actions } from '../../store/repository';
+import { useDispatch, useSelector } from 'react-redux';
+import { State, SORT_OPTIONS } from '../../../types';
+import { Product as ProductInterface } from '@sbf-types/general';
+import { useLocale } from '@sbf-providers/locale';
+import { useTrack } from '@sbf-providers/track';
 
 const ORDER_OPTIONS = [
-  {label: 'Relevância', value: SORT_OPTIONS.RELEVANCE},
-  {label: 'Menor preço', value: SORT_OPTIONS.LOWEST_PRICE},
-  {label: 'Maior preço', value: SORT_OPTIONS.HIGHEST_PRICE},
-  {label: 'Maior desconto', value: SORT_OPTIONS.HIGHEST_DISCOUNT},
+  { label: 'Relevância', value: SORT_OPTIONS.RELEVANCE },
+  { label: 'Menor preço', value: SORT_OPTIONS.LOWEST_PRICE },
+  { label: 'Maior preço', value: SORT_OPTIONS.HIGHEST_PRICE },
+  { label: 'Maior desconto', value: SORT_OPTIONS.HIGHEST_DISCOUNT },
 ];
 
 export const CatalogSearch = () => {
   const dispatch = useDispatch();
   const {
     touchableTrack: {
-      Catalog: {trackSeeMore, trackSort},
+      Catalog: { trackSeeMore, trackSort },
     },
   } = useTrack();
   const {
     containers: {
-      CatalogSearch: {sortBy, seeMore},
+      CatalogSearch: { sortBy, seeMore },
     },
   } = useLocale();
-  const {searchProducts, searchHasMorePage, searchSort} = useSelector<
+  const { searchProducts, searchHasMorePage, searchSort } = useSelector<
     State,
     {
       searchProducts: ProductInterface[];
       searchHasMorePage: boolean;
       searchSort: string;
     }
-  >(({catalog}) => ({
+  >(({ catalog }) => ({
     searchSort: catalog.searchSort,
     searchProducts: catalog.visibleSearchProducts,
     searchHasMorePage: catalog.searchHasMorePage,
@@ -97,9 +97,9 @@ export const CatalogSearch = () => {
         }
         data={searchProducts}
         numColumns={2}
-        columnWrapperStyle={{justifyContent: 'center'}}
+        columnWrapperStyle={{ justifyContent: 'center' }}
         keyExtractor={item => item.id}
-        renderItem={({item}: any) => (
+        renderItem={({ item }: any) => (
           <LayoutItem gutterVertical="sm">
             <Product {...item} />
           </LayoutItem>

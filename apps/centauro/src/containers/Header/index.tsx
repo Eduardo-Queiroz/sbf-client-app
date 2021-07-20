@@ -1,9 +1,9 @@
 import React from 'react';
-import {Platform, StatusBar} from 'react-native';
+import { Platform, StatusBar } from 'react-native';
 import IconLogo from '../../assets/icons/logo-white.svg';
 
-import {useElement, ElementsType} from '@sbf-providers/elements';
-import {ContainerType, useContainer} from '@sbf-providers/module';
+import { useElement, ElementsType } from '@sbf-providers/elements';
+import { ContainerType, useContainer } from '@sbf-providers/module';
 
 const Header = () => {
   const SafeAreaLayoutItem = useElement<LayoutProps>(
@@ -18,6 +18,7 @@ const Header = () => {
   return (
     <SafeAreaLayoutItem gutterInner="sm" elevated backgroundColor="primary">
       <Grid
+        gutterHorizontal="sm"
         paddingBottom="xs"
         justifyContent="flex-end"
         style={{
