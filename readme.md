@@ -28,7 +28,7 @@ App Client SBF é um plataforma modular que possui compartilhamento de features 
 
 | Principio               | Aplicação do conceito                                                                                                                 |
 | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| Responsabilidade Única  | Aplicação do conceito: cada modulo possui uma unica responsabilidade bem definida                                                     |
+| Responsabilidade Única  | Cada modulo possui uma unica responsabilidade bem definida                                                     |
 | Aberto-Fechado          | Você deve ser capaz de estender um comportamento de uma modulo, sem modificá-lo.                                                      |
 | Substituição de Liskov  | Cada componente é substituivel por outro igual que use a mesma interface definida no provider.                                        |
 | Segregação da Interface | Caso haja comportamentos unicos para um aplicação, é melhor componentes especificos que se sobescrevem do que um componente generico. |
@@ -47,7 +47,7 @@ App Client SBF é um plataforma modular que possui compartilhamento de features 
 
 | Padrão        | Aplicação do conceito                                                                                                                                                                                            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Monorepo      | multiplos apps que podem possuir multiplas dependencias utilizam varias features dasacoplados em comum, facilitando o atomic commit e re-uso de codigo entre apps                                                |
+| Monorepo      | Multiplos apps que podem possuir multiplas dependencias utilizam varias features dasacoplados em comum, facilitando o atomic commit e re-uso de codigo entre apps                                                |
 | Redux         | Utilizando o conceito de maquina de estado finita nos da uma interface previsivel, imutavel e debugavel                                                                                                          |
 | Atomic design | Arquitetura de componentização inspirada nos conceitos de atomo(element), molecula(component), organismo(container), template(screens) e pagina(rota) utilizando design tokens para a personalização de cada app |
 
@@ -141,8 +141,16 @@ yarn start:e2e
 
 Após execute o comando para buildar o app
 
+Android:
+
 ```sh
 yarn android
+```
+
+Ios:
+
+```sh
+yarn ios
 ```
 
 Em paralelo ao build execute o comando para obter os resultados do teste e2e
@@ -159,7 +167,7 @@ Ios:
 yarn report-ios:e2e
 ```
 
-#### Testes de componente (RNTL)
+#### Testes de componente e Teste de snapshot (RNTL)
 
 Para executar os teste execute o comando
 
@@ -188,22 +196,3 @@ MIT
 **Eduardo Queiroz (eduqueiroz21@gmail.com)**
 
 [//]: # "These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax"
-[dill]: https://github.com/joemccann/dillinger
-[git-repo-url]: https://github.com/joemccann/dillinger.git
-[john gruber]: http://daringfireball.net
-[df1]: http://daringfireball.net/projects/markdown/
-[markdown-it]: https://github.com/markdown-it/markdown-it
-[ace editor]: http://ace.ajax.org
-[node.js]: http://nodejs.org
-[twitter bootstrap]: http://twitter.github.com/bootstrap/
-[jquery]: http://jquery.com
-[@tjholowaychuk]: http://twitter.com/tjholowaychuk
-[express]: http://expressjs.com
-[angularjs]: http://angularjs.org
-[gulp]: http://gulpjs.com
-[pldb]: https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md
-[plgh]: https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md
-[plgd]: https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md
-[plod]: https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md
-[plme]: https://github.com/joemccann/dillinger/tree/master/plugins/medium/README.md
-[plga]: https://github.com/RahulHP/dillinger/blob/master/plugins/googleanalytics/README.md
