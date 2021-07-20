@@ -1,0 +1,11 @@
+{
+  "name": "@sbf-modules/banner",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./index.ts",
+  "peerDependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.3"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@sbf-types/general",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./src/index.d.ts",
+  "types": "src/index.d.ts",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "devDependencies": {
+    "typescript": "^3.6.3"
+  }
+}

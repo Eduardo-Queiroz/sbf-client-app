@@ -1,0 +1,15 @@
+{
+  "name": "@sbf-core/components",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "@sbf-providers/theme": "*",
+    "@sbf-providers/elements": "*",
+    "@sbf-core/icons": "*",
+    "@sbf-providers/navigation": "*"
+  },
+  "author": "Eduardo Queiroz",
+  "license": "ISC"
+}

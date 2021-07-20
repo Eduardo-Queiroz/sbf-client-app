@@ -1,0 +1,10 @@
+{
+  "name": "@sbf-providers/theme",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./src/index.ts",
+  "dependencies": {
+    "styled-components": "^5.0.1"
+  }
+}

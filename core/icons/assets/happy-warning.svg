@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="prefix__icon_selected" width="85" height="85" viewBox="0 0 85 85">
+    <defs>
+        <style>
+            .prefix__cls-2{fill:#bbb}
+        </style>
+    </defs>
+    <path id="prefix__Retângulo_35" fill="none" d="M0 0H85V85H0z" data-name="Retângulo 35"/>
+    <g id="prefix__Grupo_215" data-name="Grupo 215" transform="translate(7.438 7.437)">
+        <path id="prefix__Caminho_294" d="M37.162 2.1a35.063 35.063 0 1 0 35.063 35.063A34.917 34.917 0 0 0 37.162 2.1zm0 64.458a29.4 29.4 0 1 1 29.4-29.4 29.323 29.323 0 0 1-29.4 29.4z" class="prefix__cls-2" data-name="Caminho 294" transform="translate(-2.1 -2.1)"/>
+        <path id="prefix__Caminho_295" d="M29.042 9.944L17 21.985l-3.9-3.9a2.779 2.779 0 0 0-3.9 0 2.6 2.6 0 0 0-.7 2.129 5.034 5.034 0 0 0 .708 2.125l6.021 6.021a2.6 2.6 0 0 0 2.125.708 5.034 5.034 0 0 0 2.125-.708l14.167-14.166a2.779 2.779 0 0 0 0-3.9c-1.771-1.413-3.546-1.413-4.604-.35z" class="prefix__cls-2" data-name="Caminho 295" transform="translate(14.167 15.911)"/>
+    </g>
+</svg>

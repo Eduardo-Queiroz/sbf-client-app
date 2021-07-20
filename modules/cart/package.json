@@ -1,0 +1,19 @@
+{
+  "name": "@sbf-modules/cart",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./index.ts",
+  "peerDependencies": {
+    "react": "16.13.1",
+    "react-native": "0.63.3",
+    "react-native-card-flip": "^1.0.7",
+    "react-redux": "^7.2.0",
+    "redux": "^4.0.5",
+    "@sbf-core/api": "*",
+    "@sbf-core/config": "*",
+    "@sbf-core/elements": "*",
+    "@sbf-core/components": "*",
+    "@sbf-providers/navigation": "*"
+  }
+}

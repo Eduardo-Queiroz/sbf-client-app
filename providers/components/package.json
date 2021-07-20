@@ -1,0 +1,7 @@
+{
+  "name": "@sbf-providers/components",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./src/index.tsx"
+}

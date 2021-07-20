@@ -1,0 +1,12 @@
+{
+  "name": "@sbf-core/api",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "peerDependencies": {
+    "axios": "*",
+    "@sbf-providers/config": "*",
+    "react-redux": "*"
+  },
+  "author": "Eduardo Queiroz",
+  "license": "ISC"
+}

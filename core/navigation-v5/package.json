@@ -1,0 +1,15 @@
+{
+  "name": "@sbf-core/navigation-v5",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./src/index.tsx",
+  "peerDependencies": {
+    "react": "*",
+    "@react-navigation/native": "^5.8.4",
+    "@react-navigation/stack": "^5.12.1"
+  },
+  "devDependencies": {
+    "@types/react-navigation": "^3.0.8"
+  }
+}

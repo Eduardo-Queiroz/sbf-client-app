@@ -1,0 +1,11 @@
+{
+  "name": "@sbf-providers/navigation",
+  "version": "1.0.0",
+  "author": "Eduardo Queiroz",
+  "license": "ISC",
+  "main": "./src/index.tsx",
+  "peerDependencies": {
+    "react": "16.13.1",
+    "@react-navigation/native": "^5.8.4"
+  }
+}

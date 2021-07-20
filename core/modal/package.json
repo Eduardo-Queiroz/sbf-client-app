@@ -1,0 +1,16 @@
+{
+  "name": "@sbf-core/modal",
+  "version": "1.0.0",
+  "main": "./src/index.ts",
+  "peerDependencies": {
+    "@sbf-providers/elements": "*",
+    "@sbf-providers/modal": "*",
+    "@sbf-providers/theme": "*",
+    "@sbf-providers/track": "*",
+    "styled-components": "*",
+    "react-native": "*",
+    "react": "*"
+  },
+  "author": "Eduardo Queiroz",
+  "license": "ISC"
+}

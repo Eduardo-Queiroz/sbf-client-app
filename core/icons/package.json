@@ -1,0 +1,10 @@
+{
+  "name": "@sbf-core/icons",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "peerDependency": {
+    "react-native-svg": "^9.11.1"
+  },
+  "author": "Eduardo Queiroz",
+  "license": "ISC"
+}
