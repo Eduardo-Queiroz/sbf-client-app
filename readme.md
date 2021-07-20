@@ -55,9 +55,10 @@ App Client SBF é um plataforma modular que possui compartilhamento de features 
 
 | Tipo                 | Aplicação do conceito                                                                                                                                         |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| E2E                  | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional porém com um axios mockado             |
+| E2E               | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional fazendo requests diretamente ao servidor     (fake backend está com dados incorretos e esse teste foi depreciado) |
+| Teste de Integração  | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional porém com um axios mockado  |
 | Teste de componentes | Utilizo o RNTL para testes de componente onde a partir de props mockadas simulo a renderização do componente que deve se comportar de um modo como o esperado |
-| Teste de snapshot    | As interfaces dos providers devem se manter consistentes e esse teste garante que não hajam mudanças inesperadas                                              |
+| Teste de snapshot    | As interfaces dos providers devem se manter consistentes e esse teste garante que não hajam mudanças inesperadas   |
 
 ## Desenho da arquitetura
 
