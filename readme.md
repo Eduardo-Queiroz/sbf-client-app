@@ -147,8 +147,16 @@ yarn android
 
 Em paralelo ao build execute o comando para obter os resultados do teste e2e
 
+Android:
+
 ```sh
-yarn report:e2e
+yarn report-android:e2e
+```
+
+Ios:
+
+```sh
+yarn report-ios:e2e
 ```
 
 #### Testes de componente (RNTL)

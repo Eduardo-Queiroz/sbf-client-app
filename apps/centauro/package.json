@@ -5,8 +5,9 @@
     "start": "set NODE_ENV=dev & react-native start --reset-cache",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start:e2e": "set NODE_ENV=test & react-native start --reset-cache",
-    "reporter:e2e": "npx cavy run-android --skipbuild",
+    "start:e2e": "set NODE_ENV=test & NODE_ENV=test react-native start --reset-cache",
+    "reporter-android:e2e": "npx cavy run-android --skipbuild",
+    "reporter-ios:e2e": "npx cavy run-ios --skipbuild",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prettier": "prettier ."
   },
