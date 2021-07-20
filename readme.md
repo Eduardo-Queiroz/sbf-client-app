@@ -40,25 +40,25 @@ App Client SBF é um plataforma modular que possui compartilhamento de features 
 | ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Protocol Layer Design Pattern | A comunicação entre modulos possuem uma camada intermediadora que utilizam a mesma interface de comunicação de uma forma desacoplada.                                              |
 | Dependency Injection          | Não possui acoplamento entre modulos ou dependencias externas sempre dependendo de uma abstração e não de uma implementação que são sempre configuradas no contexto da pasta apps. |
-| Singleton                     | Possui instancias unicas que gerenciam listeners de modais e analytics.                                                                                                            |
-| Observer                      | Os modulos utilizam o connect do redux para observarem um estado global encapsulado em um contexto especifico.                                                                     |
+| Singleton                     | Possui instancias unicas que gerenciam listeners de modais e analytics.  |
+| Observer                      | Os modulos utilizam o connect do redux para observarem um estado global encapsulado em um contexto especifico.   |
 
 #### Arquiteturas
 
 | Padrão        | Aplicação do conceito                                                                                                                                                                                            |
 | ------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Monorepo      | Multiplos apps que podem possuir multiplas dependencias utilizam varias features dasacoplados em comum, facilitando o atomic commit e re-uso de codigo entre apps                                                |
-| Redux         | Utilizando o conceito de maquina de estado finita nos da uma interface previsivel, imutavel e debugavel                                                                                                          |
+| Redux         | Utilizando o conceito de maquina de estado finita nos da uma interface previsivel, imutavel e debugavel |
 | Atomic design | Arquitetura de componentização inspirada nos conceitos de atomo(element), molecula(component), organismo(container), template(screens) e pagina(rota) utilizando design tokens para a personalização de cada app |
 
 #### Testes
 
-| Tipo                 | Aplicação do conceito                                                                                                                                         |
+| Teste                 | Aplicação do conceito                                                                                                                                         |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| E2E               | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional fazendo requests diretamente ao servidor     (fake backend está com dados incorretos e esse teste foi depreciado) |
-| Teste de Integração  | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional porém com um axios mockado  |
-| Teste de componentes | Utilizo o RNTL para testes de componente onde a partir de props mockadas simulo a renderização do componente que deve se comportar de um modo como o esperado |
-| Teste de snapshot    | As interfaces dos providers devem se manter consistentes e esse teste garante que não hajam mudanças inesperadas   |
+| E2E | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional fazendo requests diretamente ao servidor (fake backend está com dados incorretos e esse teste foi depreciado) |
+| Integração  | Utilizo o [cavy] para testes de caixa cinza onde utilizo as refs dos componentes para um teste semelhante ao funcional porém com um axios mockado  |
+| Componentes | Utilizo o RNTL para testes de componente onde a partir de props mockadas simulo a renderização do componente que deve se comportar de um modo como o esperado|
+| Snapshot    | Os providers devem se manter consistentes e esse teste garante que não hajam mudanças inesperadas |
 
 ## Desenho da arquitetura
 
@@ -74,7 +74,7 @@ App Client SBF é um plataforma modular que possui compartilhamento de features 
 
 Siga os passos no link: https://reactnative.dev/docs/environment-setup
 
-## Para comceçar
+## Para começar
 
 Instale as dependencias do projeto
 
